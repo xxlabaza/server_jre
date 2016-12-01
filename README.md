@@ -1,8 +1,8 @@
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.112`, `latest` (*1.1/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre/Dockerfile)
--	[`8.112-jce`, `jce` (*1.1/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre_jce/Dockerfile)
+-	[`8.112`, `latest` (*server_jre/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre/Dockerfile)
+-	[`8.112-jce`, `jce` (*server_jre_jce/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre_jce/Dockerfile)
 
 # How to use this image
 
