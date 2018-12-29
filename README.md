@@ -1,8 +1,11 @@
 
 # Supported tags and respective `Dockerfile` links
 
-- [`8.192`, `latest` (*server_jre/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre/Dockerfile)
-- [`8.192-jce`, `jce` (*server_jre_jce/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre_jce/Dockerfile)
+> **IMPORTANT:** Strong cryptography is now enabled out of the box, so there is no separate **JCE** tag anymore
+
+- [`12`, `latest` (*server_jre/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/master/server_jre/Dockerfile)
+- [`8.192` (*server_jre/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/0f013e103d16e5d257128d326b2a53ccdfd060a1/server_jre/Dockerfile)
+- [`8.192-jce`, `jce` (*server_jre_jce/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/0f013e103d16e5d257128d326b2a53ccdfd060a1/server_jre_jce/Dockerfile)
 - [`8.112` (*server_jre/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/56332e881ca0eb8a3230448297c28f900e0f3f96/server_jre/Dockerfile)
 - [`8.112-jce`, `jce` (*server_jre_jce/Dockerfile*)](https://github.com/xxlabaza/server_jre/blob/56332e881ca0eb8a3230448297c28f900e0f3f96/server_jre_jce/Dockerfile)
 
@@ -14,14 +17,6 @@ Use like you would any other base image:
 
 ```dockerfile
 FROM xxlabaza/server_jre
-ADD *.jar app.jar
-ENTRYPOINT ["java", "-jar", "/app.jar"]
-```
-
-Or use with `JCE` extension:
-
-```dockerfile
-FROM xxlabaza/server_jre:jce
 ADD *.jar app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
 ```
